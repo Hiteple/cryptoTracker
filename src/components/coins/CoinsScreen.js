@@ -17,11 +17,11 @@ class CoinsScreen extends Component {
   };
 
   handlePress = (coin) => {
-    this.props.navigation.navigate('CoinsDetail', {coin});
+    this.props.navigation.navigate('CoinsDetail', {coinObj: coin});
   };
+
   render() {
     const {coins} = this.state;
-
     return (
       <View style={styles.container}>
         <FlatList
