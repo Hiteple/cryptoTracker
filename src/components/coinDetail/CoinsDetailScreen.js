@@ -96,7 +96,7 @@ class CoinsDetailScreen extends Component {
     const {coinObj} = this.props.route.params;
     this.props.navigation.setOptions({title: coinObj.symbol});
     this.getMarkets(coinObj.id);
-    this.setState({coin: coinObj}, () => this.getFavorite());
+    this.setState({coin: coinObj});
   }
 
   render() {
